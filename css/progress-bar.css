@@ -25,3 +25,30 @@
             height: 100%;
             background-color: #03a9f5;
         }
+
+             .progress-bar > .progress > .bar {
+            width: 86%;
+            height: 100%;
+            background-color: transparent;
+        }
+            .progress-bar > .progress > .bar > .loading {
+                width: 0%;
+                height: 100%;
+                background-color: #03A9F5;
+
+                animation: loading 2s linear 1s 1 alternate forwards;
+            }
+            
+@keyframes loading {
+    0% {
+        width: 0;
+        background-color: #03A9F5;
+    }
+    50%{
+        background-color: yellow;
+    }
+    100% {
+        width: 90%;
+        background-color: green;
+    }
+}
