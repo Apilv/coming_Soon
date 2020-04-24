@@ -7,6 +7,7 @@ footer.container{
 footer > .row:nth-child(1){
     padding: 10px 0;
     border-bottom: 2px solid #fff;
+    position: relative;
 }
     footer .fa {
         width: 40px;
@@ -52,16 +53,32 @@ footer > .row:nth-child(1){
     text-decoration: none;
     }
 
+    
+.back-to-top{
+    position: absolute;
+    top: -30px;
+    right: -15px;
+}
+
 @media (max-width: 800px) {
-    footer .texts > p:nth-child(2) {
+    footer > .row:nth-child(2) {
         width: 500px;
         margin: 0 calc(50% - 250px);
-        }
-     footer .texts > p {
-         width: 100px;
-     }
+    }
+    footer .texts > p{
+        width: 100%;
+    }
         footer .texts > p:nth-child(2) {
             border: none;
         }
-
+    .back-to-top{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    footer > .row:nth-child(2) {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
 }

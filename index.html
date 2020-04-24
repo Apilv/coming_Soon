@@ -6,11 +6,14 @@
     <title>Coming soon</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/progress-bar.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <div class="container hero">
@@ -36,9 +39,10 @@
                     <div class="label">seconds</div>
                 </div>
             </div>
-            <div class="form">
-                SUBSCRIBE FORM
-            </div>
+                <form class="form">
+                    <input type="email" placeholder="Type your email">
+                    <div class="btn btn-red">Subscribe now</div>
+                </form>
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
@@ -86,9 +90,12 @@
         <div class="right">
             <h2>Have any question?</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas nulla id <a href="mailto:email@gmail.com">email@gmail.com</a> sapiente architecto possimus eveniet commodi dicta velit. Repudiandae!</p>
-            <div class="message">
-                MESSAGE FORM
-            </div>
+            <form class="form">
+                <input class="half" type="text" placeholder="Name">
+                <input class="half" type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <div class="btn btn-red">Send message</div>
+            </form>
         </div>
         </div>
     </main>
@@ -101,6 +108,7 @@
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
             <a href="#" class="fa fa-rss"></a>
+            <a href="#" class="btn btn-circle btn-red back-to-top fa fa-angle-up"></a>
         </div> 
         <div class="row">
         <img src="./img/matroxlogo.png" alt="Footer Logo" class="footer-logo">
